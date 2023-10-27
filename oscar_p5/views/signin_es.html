@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Usuario</title>
+</head>
+<body>
+    <div>
+        <h1>Creación de usuario</h1>
+    </div>
+    <div>
+        <form method="POST" action="../signin.php">
+            <div>
+                <label>Id</label><br>
+                <input type="number" name="id" required>
+            </div>
+            <div>
+                <label>Rol </label><br>
+                <select name="rol">
+                    <option value="alumnat">Alumno</option>
+                    <option value="professorat">Profesor</option>
+                </select>
+            </div>
+            <div>
+                <label>Nombre</label><br>
+                <input type="text" name="name" required>
+            </div>
+            <div>
+                <label>Apellido</label><br>
+                <input type="text" name="surname" required>
+            </div>
+            <div>
+                <label>Contraseña</label><br>
+                <input type="text" name="password" required>
+            </div>
+            <div>
+                <label>Email</label><br>
+                <input type="text" name="email" required>
+            </div>
+            <div>
+                <label>Activo</label><br>
+                <input type="checkbox" name="active">
+            </div>
+            <div>
+                <input type="submit" value="Enviar datos" required>
+            </div>
+            <div>
+                <a href="login_es.html">Iniciar sesión</a>
+            </div>
+        </form>
+    </div>
+    <div>
+        <a href="../deleteCookie.php">Borrar cookie</a>
+        <a href="index.php">Volver a selección de idioma</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <div>
+        <h1>Inicio de sesión de usuario</h1>
+    </div>
+    <div>
+        <form method="POST" action="usuari_es.php">
+            <div>
+                <label>Email</label><br>
+                <input type="text" name="email" required>
+            </div>
+            <div>
+                <label>Contraseña</label><br>
+                <input type="text" name="password" required>
+            </div>
+            <div>
+                <label>Recordar</label>
+                <input type="checkbox" name="remember">
+            </div>
+            <div>
+                <input type="submit" value="Enviar" required>
+            </div>
+            <div>
+                <a href="signin_es.html">Crear usuario</a>
+            </div>
+        </form>
+    </div>
+    <div>
+        <a href="../deleteCookie.php">Borrar cookie</a>
+        <a href="index.php">Volver a selección de idioma</a>
+    </div>
+</body>
+</html>
